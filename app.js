@@ -8,3 +8,13 @@ console.log(lenguaje)
 
 console.log(nombre + " " + apellido )
 console.log(`${nombre}  ${apellido}  ${lenguaje}`);
+
+let cont = "gonzalo"
+
+let pass = prompt ("ingrese su contraseña")
+if (pass == cont){
+    console.log ("contraseña correcta")
+}
+else {
+    alert ("contraseña incorrecta")
+}
