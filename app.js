@@ -18,3 +18,9 @@ if (pass == cont){
 else {
     alert ("contraseña incorrecta")
 }
+
+let number = Number (prompt ("ingrese un numero"))
+
+for(let i=0; i<=number; i=i+2){
+    console.log(i)
+}
