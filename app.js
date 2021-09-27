@@ -1,26 +1,23 @@
-let nombre = prompt ("tu nombre aqui")
-let apellido = prompt("apellido")
-let lenguaje = prompt ("lenguaje")
+let num1= Number(prompt("ingrese un numero"));
+let num2= Number(prompt("ingrese otro numero"));
 
-console.log(nombre)
-console.log(apellido)
-console.log(lenguaje)
+let num3=calcular (num1,num2);
+let num4=calcular (50,30);
 
-console.log(nombre + " " + apellido )
-console.log(`${nombre}  ${apellido}  ${lenguaje}`);
+alert (num3,num4);
 
-let cont = "gonzalo"
+let promedio1 = promedio(num2)
+let promedio2= promedio(num4)
 
-let pass = prompt ("ingrese su contraseña")
-if (pass == cont){
-    console.log ("contraseña correcta")
-}
-else {
-    alert ("contraseña incorrecta")
+console.log(promedio1,promedio2);
+
+function promedio (a){
+    let promedio = a/2;
+    return promedio;
 }
 
-let number = Number (prompt ("ingrese un numero"))
 
-for(let i=0; i<=number; i=i+2){
-    console.log(i)
+function calcular (a,b){
+    let resultado = a+b;
+    return resultado;
 }
