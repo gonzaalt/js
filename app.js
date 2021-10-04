@@ -47,3 +47,19 @@ if(num1)
 for(let i=0; i<= num1 ; i = i+2){
     console.log(i);
 }
+
+// objetos
+
+function clientes(Nombre, Apellido, Direccion) {
+    Nombre=Nombre;
+    this.Apellido = Apellido ;
+    this.Direccion  = Direccion;
+}
+
+let nombre = prompt ("nombre")
+let apellido = prompt ("apellido")
+let direccion = prompt ("direccion")
+
+const gonzalo = new clientes (nombre, apellido, direccion)
+
+console.log(gonzalo)
