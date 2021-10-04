@@ -1,23 +1,49 @@
-let num1= Number(prompt("ingrese un numero"));
-let num2= Number(prompt("ingrese otro numero"));
 
-let num3=calcular (num1,num2);
-let num4=calcular (50,30);
 
-alert (num3,num4);
+solicitarDatos();
 
-let promedio1 = promedio(num2)
-let promedio2= promedio(num4)
 
-console.log(promedio1,promedio2);
 
-function promedio (a){
-    let promedio = a/2;
-    return promedio;
+function solicitarDatos(){
+    let num1 = Number (prompt("ingresa un numero"));
+    let num2 = Number (prompt ("ingresa segundo numero"));
+    let operador =prompt ("ingrese operacion a realizar");
+
+    calcular(num1, num2, operador);
+}
+
+function calcular (a, b, c){
+    
+    let res;
+    
+    switch(c){
+        case"+" : res = a + b;
+        break;
+        case"-" : res = a-b;
+        break;
+        case"*" : res =a * b;
+        break;
+        case"/" : res = a / b;
+        break  ; 
+        default: ("operacion invalida")
+        break;
+
+    }
+       resultado(res)
+
+}
+
+function resultado(a){
+    console.log(a)
+    alert(a)
 }
 
 
-function calcular (a,b){
-    let resultado = a+b;
-    return resultado;
+
+let num1 = Number(prompt("ingresa un numero"))
+
+if(num1)
+
+for(let i=0; i<= num1 ; i = i+2){
+    console.log(i);
 }
