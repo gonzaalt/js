@@ -63,3 +63,44 @@ let direccion = prompt ("direccion")
 const gonzalo = new clientes (nombre, apellido, direccion)
 
 console.log(gonzalo)
+
+
+class Producto{
+    constructor(nombre,precio){
+            this.nombre =nombre;
+            this.precio= precio;
+    }
+
+}
+
+let listaRopa = [];
+
+listaRopa.push(new Producto("camiseta",9000))
+listaRopa.push(new Producto("short",5000))
+listaRopa.push(new Producto("campera",10000))
+listaRopa.push(new Producto("chaleco",4000))
+
+//array
+
+const agregarRopaALaLista = () => {
+
+    let nombre= prompt ("Nombre del producto");
+    let precio = Number (prompt ( "Precio del producto"));
+
+    let producto = new Producto (nombre, precio)
+    listaRopa.push(producto)
+
+
+}
+
+listaRopa.sort((a,b) => {
+if (a.precio > b.precio){
+    return -1
+    }
+if (a.precio < b.precio){
+    return 1
+}
+return 0
+})
+
+console.log (listaRopa)
