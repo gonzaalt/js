@@ -1,45 +1,5 @@
 
 
-solicitarDatos();
-
-
-
-function solicitarDatos(){
-    let num1 = Number (prompt("ingresa un numero"));
-    let num2 = Number (prompt ("ingresa segundo numero"));
-    let operador =prompt ("ingrese operacion a realizar");
-
-    calcular(num1, num2, operador);
-}
-
-function calcular (a, b, c){
-    
-    let res;
-    
-    switch(c){
-        case"+" : res = a + b;
-        break;
-        case"-" : res = a-b;
-        break;
-        case"*" : res =a * b;
-        break;
-        case"/" : res = a / b;
-        break  ; 
-        default: ("operacion invalida")
-        break;
-
-    }
-       resultado(res)
-
-}
-
-function resultado(a){
-    console.log(a)
-    alert(a)
-}
-
-
-
 let num1 = Number(prompt("ingresa un numero"))
 
 if(num1)
@@ -103,4 +63,28 @@ if (a.precio < b.precio){
 return 0
 })
 
+
 console.log (listaRopa)
+
+console.log(document)
+console.log(document.body);
+
+
+console.log(document.getElementById("unico"))
+
+const monk = document.createElement ("h2")
+monk.setAttribute ("id", "elementoAgregado")
+monk.textContent = "Elemento nuevo"
+
+document.getElementById ("aca").appendChild (monk)
+
+console.log(monk)
+
+const Datos = () => {
+
+        console.log(document.getElementById ("nombre").value)
+        console.log(document.getElementById ("categoria").value)
+        console.log(document.getElementById ("precio").value)
+        console.log(document.getElementById ("stock").value)
+
+}
