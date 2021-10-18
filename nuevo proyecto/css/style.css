@@ -1,0 +1,38 @@
+html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+
+body {
+    background-color: #164078 !important;
+  }
+
+header{background-color: #164078;
+     display: flex;
+    justify-content: center;
+    padding-bottom: 10px;}
+
+    .titulo{text-align: center;
+    font-size: 4rem;
+        color: #fcb125;
+    }
+
+    .compra{text-align: center;
+    font-size: 2rem;
+    color: #fcb125;}
+
+    .tienda{width: 100%;
+        height: 100%;
+        display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     align-items: center  ;
+     margin: 5rem;
+     padding:2rem;
+     border: #fcb125;
+    }
+    .tienda > div {border: solid 1px #fcb125;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding: 15px;}
+    
